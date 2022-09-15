@@ -38,6 +38,11 @@
   <ItemGroup>
     <ProjectReference Include="..\General.WinUIClassLibraryApp\General.WinUIClassLibraryApp.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Telerik.WinUI.Controls">
+      <HintPath>..\..\..\Program Files (x86)\Progress\Telerik Reporting R2 2022\Bin\WinUIViewerDependencies\Desktop\WinUI50\Telerik.WinUI.Controls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
   <!-- 
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
