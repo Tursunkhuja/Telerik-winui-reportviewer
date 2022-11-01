@@ -12,18 +12,5 @@ namespace General.WinUIClassLibraryApp
         {
             this.InitializeComponent();
         }
-
-        void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
-        {
-            var menuItem = sender as MenuFlyoutItem;
-            if (menuItem != null)
-            {
-                var selectedTheme = menuItem?.Text;
-                if (!string.IsNullOrWhiteSpace(selectedTheme))
-                {
-                    this.themeChangeDropDown.Content = selectedTheme;                    
-                }
-            }
-        }
     }
 }

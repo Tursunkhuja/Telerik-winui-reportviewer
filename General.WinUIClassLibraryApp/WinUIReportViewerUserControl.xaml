@@ -9,36 +9,7 @@
     mc:Ignorable="d">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-
-        <Grid Grid.Row="0" Background="{ThemeResource DemoBackgroundBrush}">
-            <StackPanel
-                Padding="10,4"
-                HorizontalAlignment="Right"
-                Orientation="Horizontal">
-                <TextBlock
-                    Margin="0,0,10,0"
-                    VerticalAlignment="Center"
-                    Foreground="{ThemeResource SystemBaseHighColor}"
-                    Text="WinUI Theme" />
-                <DropDownButton
-                    x:Name="themeChangeDropDown"
-                    MinWidth="90"
-                    HorizontalContentAlignment="Left"
-                    Content="Light">
-                    <DropDownButton.Flyout>
-                        <MenuFlyout Placement="Bottom">
-                            <MenuFlyoutItem Click="MenuFlyoutItem_Click" Text="Light" />
-                            <MenuFlyoutItem Click="MenuFlyoutItem_Click" Text="Dark" />
-                        </MenuFlyout>
-                    </DropDownButton.Flyout>
-                </DropDownButton>
-            </StackPanel>
-        </Grid>
-        <telerikReporting:ReportViewer x:Name="reportViewer" Grid.Row="1">
+        <telerikReporting:ReportViewer x:Name="reportViewer">
             <telerikReporting:ReportViewer.ReportSource>
                 <telerikReportingCore:UriReportSource Uri="Reports\Barcodes Report.trdp" />
             </telerikReporting:ReportViewer.ReportSource>

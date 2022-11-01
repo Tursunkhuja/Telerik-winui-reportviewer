@@ -15,10 +15,6 @@
 			<None Remove="MainWindow.xaml" />
 			<Manifest Include="$(ApplicationManifest)" />
 		</ItemGroup>
-  <ItemGroup>    
-    <PackageReference Include="Telerik.Reporting.OpenXmlRendering" Version="16.1.22.622" />
-    <PackageReference Include="Telerik.ReportViewer.WinUI" Version="16.1.22.622" />    
-  </ItemGroup>
 	<ItemGroup>
 		<None Update="appsettings.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -33,11 +29,6 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\General.WinUIClassLibraryApp\General.WinUIClassLibraryApp.csproj" />
 	</ItemGroup>
-  <ItemGroup>
-    <Reference Include="Telerik.WinUI.Controls">
-      <HintPath>..\..\..\..\Program Files (x86)\Progress\Telerik Reporting R2 2022\Bin\WinUIViewerDependencies\Desktop\WinUI50\Telerik.WinUI.Controls.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 	<ItemGroup>
 		<FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" RuntimeFrameworkVersion="10.0.19041.24" />
 		<FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" TargetingPackVersion="10.0.19041.24" />

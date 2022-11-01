@@ -38,11 +38,6 @@
   <ItemGroup>
     <ProjectReference Include="..\General.WinUIClassLibraryApp\General.WinUIClassLibraryApp.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Telerik.WinUI.Controls">
-      <HintPath>..\..\..\Program Files (x86)\Progress\Telerik Reporting R2 2022\Bin\WinUIViewerDependencies\Desktop\WinUI50\Telerik.WinUI.Controls.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 
   <!-- 
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
@@ -52,4 +47,12 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.WindowsDesktop.App.Wpf" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" RuntimeFrameworkVersion="10.0.19041.24" />
+		<FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" TargetingPackVersion="10.0.19041.24" />
+	</ItemGroup>
 </Project>
